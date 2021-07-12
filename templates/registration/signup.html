@@ -25,10 +25,9 @@
             <button class="btn btn-primary" type="submit">Sign Up</button>
             </div>
              <p class="text-center mt-3">
-              Already have an Account? <a href="{% url 'login' %}?next={{ request.GET.next }} "><b>Login</b></a>
+              Already have an Account? <a href="{% url 'core:login' %}?next={{ request.GET.next }} "><b>Login</b></a>
             </p> 
-            {% comment %} <a href="{% url 'social:begin' 'facebook' %}?next={{ request.GET.next }}" class="btn btn-outline-primary btn-block">Sign In with Facebook</a> {% endcomment %}
-          </form>
+            </form>
         </div>
       </div>
     </div>

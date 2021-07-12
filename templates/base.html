@@ -27,14 +27,14 @@
           <a class="nav-link active" aria-current="page" href="#">Password change</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'logout' %}">Logout</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'core:logout' %}">Logout</a>
           </li>
           {% else %}
           <li class="nav-item">
-          <a class="nav-link {% if request.GET.next == '/customer/' %}active{% endif %}" aria-current="page" href="{% url 'login' %}?next=/customer/">Customer</a>
+          <a class="nav-link {% if request.GET.next == '/customer/' %}active{% endif %}" aria-current="page" href="{% url 'core:login' %}?next=/customer/">Customer</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link {% if request.GET.next == '/courier/' %}active{% endif %}" aria-current="page" href="{% url 'login' %}?next=/courier/">Courier</a>
+              <a class="nav-link {% if request.GET.next == '/courier/' %}active{% endif %}" aria-current="page" href="{% url 'core:login' %}?next=/courier/">Courier</a>
           </li>
           <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Password reset</a>

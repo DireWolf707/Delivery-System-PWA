@@ -25,9 +25,8 @@
             <button class="btn btn-primary" type="submit">Sign In</button>
             </div>
              <p class="text-center mt-3">
-              New to Fast Parcel? <a href="{% url 'sign_up' %}?next={{ request.GET.next }} "><b>Sign Up</b></a>
+              New to Fast Parcel? <a href="{% url 'core:sign_up' %}?next={{ request.GET.next }} "><b>Sign Up</b></a>
             </p> 
-            {% comment %} <a href="{% url 'social:begin' 'facebook' %}?next={{ request.GET.next }}" class="btn btn-outline-primary btn-block">Sign In with Facebook</a> {% endcomment %}
           </form>
         </div>
       </div>
